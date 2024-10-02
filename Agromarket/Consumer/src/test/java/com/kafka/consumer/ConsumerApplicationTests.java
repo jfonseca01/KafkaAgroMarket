@@ -1,13 +1,13 @@
 package com.kafka.consumer;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootTest
-class ConsumerApplicationTests {
+@SpringBootApplication
+public class ConsumerApplication {
 
-	@Test
-	void contextLoads() {
+	public static void main(String[] args) {
+		SpringApplication.run(ConsumerApplication.class, args);
 	}
 
 }
